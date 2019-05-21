@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <script>
+            function myFunction(){
+                alert("Pagina ha sido cargada!");
+            }
+        </script>
+        <body onload="myFunction()"><!---Despliega una ventana diciendo pagina cargada-->
+                <p id=Titulo>Registrate!<p>
+                <form name="formulario" method="post" action="http://pagina.com/send.php"><!-- Primer campo de entrada de datos -->
+                   <p>Nombre:</p> 
+                    <input id=name type="text" name="nombre" onblur="myFunction2()"><br><!-- Botón de envío del formulario -->
+                    
+                    <p>Email:</p>
+                    <input id=email type="text" name="Email" value=""><br><!-- Botón de envío del formulario -->
+                    <input type="submit" value="Enviar" name="Enviar" onclick="myFunction3()"><br>
+                    <script>document.getElementById("Titulo").innerHTML="Registrate ahora!"</script>
+                    
+                <script>
+                    function myFunction2() {
+                        var x = document.getElementById("name");
+                        x.value = x.value.toUpperCase();
+                    
+                    if (x.value==="Viridiana");
+                    alert("Hola" +" "+ "viri!");
+                    }   
+                </script>
+                
+                <script>
+                function myFunction3(){
+                    alert("Haz presionado enviar");
+                    
+                }
+                </script>
+
+                
+            
+
+        </body>
+    </head>
+</html>

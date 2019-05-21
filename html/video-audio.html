@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Video Mp4</h1>
+<video width="320" height="240" controls>
+        <source src="C:/Users/wemanconnect/Documents/html/video.mp4" type="video/mp4">
+    </video><br>
+    <h1>Audio Mp3</h1>
+    <audio id="demo" preload="auto" controls ><source src="C:/Users/wemanconnect/Documents/html/audio.mp3" type="audio/mp3"></audio>
+    <br>
+<div><br>
+    <button onclick="document.getElementById('demo').play()">reproducir el audio</button>
+    <button onclick="document.getElementById('demo').pause()">pausar audio</button>
+    <button onclick="document.getElementById('demo').volume+=0.1">Aumentar volumen</button>
+    <button onclick="document.getElementById('demo').volume-=0.1">Disminuir el volumen</button>
+</div>
+<br>
+<h1>Video youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W6GTDfrWjXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
