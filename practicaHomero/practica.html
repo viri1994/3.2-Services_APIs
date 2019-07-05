@@ -1,0 +1,42 @@
+<html>
+
+<body id="body">
+</body>
+
+<script>
+    /*
+ fetch("https://random.dog/woof.json").then((Response) => {
+    // console.log(Response)
+     return Response.json()
+
+ }).then((data) => {
+  console.log(data)
+  var image = document.createElement("img");
+ var imageParent = document.getElementById("body");
+ image.id = "id";
+ image.src = data.url;            // image.src = "IMAGE URL/PATH"
+ imageParent.appendChild(image);
+ })
+*/
+
+    //async
+
+
+    async function obtenerPerrito() {
+        let respuesta = await fetch("https://random.dog/woof.json")
+        console.log(respuesta);
+
+        respuesta.json().then((data) => {
+            var image = document.createElement("img");
+            var imageParent = document.getElementById("body");
+            image.id = "id";
+            image.src = data.url;            // image.src = "IMAGE URL/PATH"
+            imageParent.appendChild(image);
+        })
+
+
+    }
+    obtenerPerrito();
+</script>
+
+</html>
